@@ -86,6 +86,7 @@ GameObject:
   - 64: {fileID: 353459857}
   - 23: {fileID: 353459856}
   - 114: {fileID: 353459860}
+  - 114: {fileID: 353459861}
   m_Layer: 0
   m_Name: Podloga
   m_TagString: Untagged
@@ -156,6 +157,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 579f8d08cafc410419d09cf563f74808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &353459861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 353459855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a253a50c2e63a704ca9f3b51578c21af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VremeKruzenja: 10
+  saturation: 1
+  brightness: 1
 --- !u!1 &434045945
 GameObject:
   m_ObjectHideFlags: 0
