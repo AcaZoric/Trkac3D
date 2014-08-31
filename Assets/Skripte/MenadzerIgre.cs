@@ -7,13 +7,16 @@ public class MenadzerIgre : MonoBehaviour
     public float skretanje = 0f;
     public GameObject Igrac;
     public int PoeniPoMetru = 1;
+    public float PocetnaBrzina = 20f;
     public float Brzina = 20f;
+    public float PovecanjeBrzinePoSekundi = 1f;
     private float Score = 0f;
     private static float HighScore = 0f;
     private bool krajIgre = false;
-	
+
     void Start()
     {
+        Brzina = PocetnaBrzina;
         HighScore = PlayerPrefs.GetFloat("HighScore");
         menadzerIgre = this;
     }
@@ -32,6 +35,7 @@ public class MenadzerIgre : MonoBehaviour
         else 
         {
             Score += Brzina * Time.deltaTime * PoeniPoMetru;
+            Brzina=Brzina+(PovecanjeBrzinePoSekundi*Time.deltaTime);
         }
 
         if(krajIgre && Input.anyKeyDown)
