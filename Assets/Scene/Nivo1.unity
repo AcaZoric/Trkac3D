@@ -12,14 +12,14 @@ SceneSettings:
     backfaceThreshold: 100
 --- !u!104 &2
 RenderSettings:
-  m_Fog: 0
-  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_Fog: 1
+  m_FogColor: {r: .158620834, g: 0, b: 1, a: 1}
   m_FogMode: 3
-  m_FogDensity: .00999999978
+  m_FogDensity: .0500000007
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: a2126534b3a11b34e977105bd9e3cc03, type: 2}
+  m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -105,7 +105,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: d8210a08ecfa1e949ac130f3a96e875d, type: 2}
+  - {fileID: 2100000, guid: cfc2a38fa53c2634aa7046b21ef6e066, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -182,7 +182,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 1418274606}
   m_GameObject: {fileID: 434045945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
@@ -292,6 +292,10 @@ Prefab:
     - target: {fileID: 100000, guid: 65fa77ce87b00434e8f45c8ec26d73ae, type: 2}
       propertyPath: m_Name
       value: UnistavacSigurica
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 65fa77ce87b00434e8f45c8ec26d73ae, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65fa77ce87b00434e8f45c8ec26d73ae, type: 2}
@@ -539,7 +543,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: .0196078438}
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -663,6 +667,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 1000
       objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 65fa77ce87b00434e8f45c8ec26d73ae, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65fa77ce87b00434e8f45c8ec26d73ae, type: 2}
   m_RootGameObject: {fileID: 434045945}
@@ -706,7 +714,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 469771654}
   m_GameObject: {fileID: 1419494176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
