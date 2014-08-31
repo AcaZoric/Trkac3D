@@ -12,7 +12,7 @@ public class MenadzerIgre : MonoBehaviour
     public float PovecanjeBrzinePoSekundi = 1f;
     private float Score = 0f;
     private static float HighScore = 0f;
-    private bool krajIgre = false;
+    private float VremeSmrti = 1.5f;
 
     void Start()
     {
@@ -25,7 +25,13 @@ public class MenadzerIgre : MonoBehaviour
     {
         if(!Igrac)
         {
-            krajIgre = true;
+            if (Input.anyKeyDown && VremeSmrti <= 0)
+            {
+                VremeSmrti = 3f;
+                Application.LoadLevel(Application.loadedLevel);
+            }
+            VremeSmrti -= Time.deltaTime;
+
             if (Score > HighScore)
             {
                 HighScore = Score;
@@ -34,42 +40,37 @@ public class MenadzerIgre : MonoBehaviour
         }
         else 
         {
+            if (Input.touchCount > 0)
+            {
+                foreach (Touch touch in Input.touches)
+                {
+                    if (touch.position.x < Screen.width / 2)
+                    {
+                        skretanje = 1;
+                    }
+                    else
+                    {
+                        skretanje = 1;
+                    }
+                }
+            }
+            else
+            {
+                skretanje = Input.GetAxis("Horizontal");
+            }
+
             Score += Brzina * Time.deltaTime * PoeniPoMetru;
             Brzina=Brzina+(PovecanjeBrzinePoSekundi*Time.deltaTime);
         }
 
-        if(krajIgre && Input.anyKeyDown)
-        {
-            Application.LoadLevel(Application.loadedLevel);
-        }
-
-        if (Input.touchCount > 0)
-        {
-            skretanje = 0f;
-            foreach (Touch touch in Input.touches)
-            {
-                if (touch.position.x < Screen.width / 2)
-                {
-                    skretanje -= 1;
-                }
-                else
-                {
-                    skretanje += 1;
-                }
-            }
-        }
-        else 
-        {
-            skretanje = Input.GetAxis("Horizontal");
-        }
     }
     void OnGUI()
     {
         GUILayout.Label("Score: " + ((int)Score).ToString());
         GUILayout.Label("High score: " + ((int)HighScore).ToString());
-        if(krajIgre == true)
+        if(!Igrac == true)
         {
-            GUILayout.Label("Kraj igre! pritisni bilo koje dugme za restart");
+            GUILayout.Label("Kraj igre!" + (VremeSmrti<=0 ? " Pritisni bilo koje dugme za restart." : ""));
         }
     }
 }

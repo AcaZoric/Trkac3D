@@ -1133,7 +1133,11 @@ MonoBehaviour:
   m_Script: {fileID: 1301386320, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   m_Priority: 3
+=======
+  m_Priority: -1
+>>>>>>> parent of 88e8df3... Revert "Dodavanje kockaste prepreke, prepreke sada uzimaju random velicinu, posle kraja igre postoji cooldown da igrac nebi slucejno pokrenuo novu igru, pocetak pravljenja menija"
   ignoreReversedGraphics: 1
   blockingObjects: 0
   m_BlockingMask:
