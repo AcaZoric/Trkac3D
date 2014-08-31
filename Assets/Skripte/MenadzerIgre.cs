@@ -37,7 +37,13 @@ public class MenadzerIgre : MonoBehaviour
         {
             Application.LoadLevel(Application.loadedLevel);
         }
+        foreach (Touch touch in Input.touches)
+        {
+            if(Camera.main.ViewportPointToRay((Vector3)touch.position).x<0.5)
+            {
 
+            }
+        }
     }
     void OnGUI()
     {
