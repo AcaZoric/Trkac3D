@@ -3,30 +3,23 @@ using System.Collections;
 
 public class KruziKrozBojeMagla : MonoBehaviour
 {
-    public float VremeKruzenja = 30f;
+    public float BrzinaKruzenja = 0.1f;
     public float saturation = 1f;
     public float brightness = 1f;
+    public float hue = 0f;
 
-	void Start ()
+	void Update()
     {
-        StartCoroutine("MenjajBoje");
-	}
+        hue += BrzinaKruzenja * Time.deltaTime;
 
-	IEnumerator MenjajBoje()
-    {
-        float t = 0f;
-        float hue = 1f;
-
-        while(t<=VremeKruzenja)
+        while (hue>1f)
         {
-            hue = Mathf.Lerp(1f, 0f, t / VremeKruzenja);
-            RenderSettings.fogColor = new HSBColor(hue, saturation, brightness).ToColor();
-            t += Time.deltaTime;
-            yield return 0;
+            hue -= 1f;
         }
-
-        hue = 0f;
-
-        StartCoroutine("MenjajBoje");
+        while (hue < 0f)
+        {
+            hue += 1f;
+        }
+        RenderSettings.fogColor = new HSBColor(hue, saturation, brightness).ToColor();
     }
 }

@@ -3,30 +3,25 @@ using System.Collections;
 
 public class KruziKrozBojeMaterijal : MonoBehaviour
 {
-    public float VremeKruzenja = 30f;
+    public string SvojstvoBoja = "_Color";
+    public float BrzinaKruzenja = 0.1f;
     public float saturation = 1f;
     public float brightness = 1f;
+    public float hue = 0f;
 
-	void Start ()
+    void Update()
     {
-        StartCoroutine("MenjajBoje");
-	}
+        hue += BrzinaKruzenja * Time.deltaTime;
 
-	IEnumerator MenjajBoje()
-    {
-        float t = 0f;
-        float hue = 0f;
-
-        while(t<=VremeKruzenja)
+        while (hue > 1f)
         {
-            hue = Mathf.Lerp(0f, 1f, t / VremeKruzenja);
-            renderer.material.color = new HSBColor(hue, saturation, brightness).ToColor();
-            t += Time.deltaTime;
-            yield return 0;
+            hue -= 1f;
+        }
+        while (hue < 0f)
+        {
+            hue += 1f;
         }
 
-        hue = 1f;
-
-        StartCoroutine("MenjajBoje");
+        renderer.material.SetColor(SvojstvoBoja, new HSBColor(hue, saturation, brightness).ToColor());
     }
 }
