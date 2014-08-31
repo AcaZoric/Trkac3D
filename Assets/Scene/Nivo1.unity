@@ -723,6 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91cd6871f55e914b8b86573e7d583f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  skretanje: 0
   Igrac: {fileID: 517552746}
   PoeniPoMetru: 1
   Brzina: 20

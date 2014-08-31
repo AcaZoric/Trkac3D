@@ -4,6 +4,7 @@ using System.Collections;
 public class MenadzerIgre : MonoBehaviour 
 {
     public static MenadzerIgre menadzerIgre;
+    public float skretanje = 0f;
     public GameObject Igrac;
     public int PoeniPoMetru = 1;
     public float Brzina = 20f;
@@ -37,12 +38,25 @@ public class MenadzerIgre : MonoBehaviour
         {
             Application.LoadLevel(Application.loadedLevel);
         }
-        foreach (Touch touch in Input.touches)
-        {
-            if(Camera.main.ViewportPointToRay((Vector3)touch.position).x<0.5)
-            {
 
+        if (Input.touchCount > 0)
+        {
+            skretanje = 0f;
+            foreach (Touch touch in Input.touches)
+            {
+                if (touch.position.x < Screen.width / 2)
+                {
+                    skretanje -= 1;
+                }
+                else
+                {
+                    skretanje += 1;
+                }
             }
+        }
+        else 
+        {
+            skretanje = Input.GetAxis("Horizontal");
         }
     }
     void OnGUI()
