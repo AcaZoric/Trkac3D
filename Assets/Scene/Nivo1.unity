@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a253a50c2e63a704ca9f3b51578c21af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VremeKruzenja: 10
+  VremeKruzenja: 30
   saturation: 1
   brightness: 1
 --- !u!1 &434045945
@@ -602,6 +602,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1128357482}
   - 114: {fileID: 1128357481}
+  - 114: {fileID: 1128357483}
   m_Layer: 0
   m_Name: MenadzerIgre
   m_TagString: Untagged
@@ -635,6 +636,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!114 &1128357483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1128357480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d3073e3dd361ed4db19f956a4691571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VremeKruzenja: 20
+  saturation: 1
+  brightness: 1
 --- !u!1001 &1418274606
 Prefab:
   m_ObjectHideFlags: 0
