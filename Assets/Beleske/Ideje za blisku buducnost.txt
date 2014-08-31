@@ -1,6 +1,4 @@
 touchscreen komande
 Meni
-opcije...moguci tilt itd..
-klizanje da duplom kliku
 Muzika, zvucni efekti
 magla viualizuje muziku

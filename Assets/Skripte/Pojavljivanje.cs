@@ -4,8 +4,7 @@ using System.Collections;
 public class Pojavljivanje : MonoBehaviour
 {
     public float vreme = 1f;
-    public float minKrajnjaVisina = 1f;
-    public float maxKrajnjaVisina = 10f;
+    public Vector3 krajnjaVelicina = Vector3.zero;
     private Vector3 pocetnaVelicina;
   
 	void Start () 
@@ -17,15 +16,14 @@ public class Pojavljivanje : MonoBehaviour
 	IEnumerator Scale()
     {
         float t = 0f;
-        Vector3 Velicina = Vector3.one;
-        Velicina.y = Random.Range(minKrajnjaVisina, maxKrajnjaVisina);
+
         while(t<= vreme)
         {
-            transform.localScale = Vector3.Lerp(pocetnaVelicina, Velicina, t / vreme);
+            transform.localScale = Vector3.Lerp(pocetnaVelicina, krajnjaVelicina, t / vreme);
             t+=Time.deltaTime;
             yield return null;
         }
 
-        transform.localScale = Velicina;
+        transform.localScale = krajnjaVelicina;
     }
 }
