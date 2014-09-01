@@ -6,6 +6,7 @@ public class KrajIgre : MonoBehaviour
 {
     public GameObject Skor;
     public GameObject NajSkor;
+
 	void Start ()
     {
         Skor.GetComponent<Text>().text = "Vas rezultat je: " + ((int)PlayerPrefs.GetFloat("Score")).ToString();
