@@ -6,4 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scene/GlavniMeni.unity
+  - enabled: 1
     path: Assets/Scene/Nivo1.unity
+  - enabled: 1
+    path: Assets/Scene/KrajIgre.unity

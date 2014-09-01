@@ -25,18 +25,18 @@ public class MenadzerIgre : MonoBehaviour
     {
         if(!Igrac)
         {
-            if (Input.anyKeyDown && VremeSmrti <= 0)
+            if (VremeSmrti <= 0)
             {
+                PlayerPrefs.SetFloat("Score", Score);
+                if (Score > HighScore)
+                {
+                    HighScore = Score;
+                    PlayerPrefs.SetFloat("HighScore", HighScore);
+                }
                 VremeSmrti = 3f;
-                Application.LoadLevel(Application.loadedLevel);
+                Application.LoadLevel("KrajIgre");
             }
             VremeSmrti -= Time.deltaTime;
-
-            if (Score > HighScore)
-            {
-                HighScore = Score;
-                PlayerPrefs.SetFloat("HighScore", HighScore);
-            }
         }
         else 
         {
@@ -46,7 +46,7 @@ public class MenadzerIgre : MonoBehaviour
                 {
                     if (touch.position.x < Screen.width / 2)
                     {
-                        skretanje = 1;
+                        skretanje = -1;
                     }
                     else
                     {
@@ -68,9 +68,9 @@ public class MenadzerIgre : MonoBehaviour
     {
         GUILayout.Label("Score: " + ((int)Score).ToString());
         GUILayout.Label("High score: " + ((int)HighScore).ToString());
-        if(!Igrac == true)
+        if(!Igrac)
         {
-            GUILayout.Label("Kraj igre!" + (VremeSmrti<=0 ? " Pritisni bilo koje dugme za restart." : ""));
+            GUILayout.Label("Kraj igre!");
         }
     }
 }
