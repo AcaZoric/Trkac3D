@@ -20,6 +20,6 @@ public class Spawn : MonoBehaviour
     void SpawnNow()
     {
         Instantiate(obj[Random.Range(0,obj.Length)], transform.position + new Vector3(Random.Range(minHorizontal,maxHorizontal), Random.Range(minVertical,maxVertical)), Quaternion.identity);
-        Invoke("SpawnNow", Random.Range(minSpawnTime, maxSpawnTime));
+		Invoke("SpawnNow", Random.Range(minSpawnTime, maxSpawnTime));
     }
 }
