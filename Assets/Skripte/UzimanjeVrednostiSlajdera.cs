@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
-using System.Collections;
 using UnityEngine.UI;
+using System.Collections;
 
-public class SlajderiIvrednosti : MonoBehaviour
+public class UzimanjeVrednostiSlajdera : MonoBehaviour
 {
-	public Slider Slajder;
+    public Slider Slajder;
 	private Text vrednost;
 
 	void Start()

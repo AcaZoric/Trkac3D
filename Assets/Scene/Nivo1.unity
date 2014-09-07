@@ -235,7 +235,7 @@ Transform:
   m_GameObject: {fileID: 214801307}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: .00999999978, z: 45}
-  m_LocalScale: {x: 50, y: 1, z: 10}
+  m_LocalScale: {x: 20, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -496,7 +496,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 381943377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1b0f0c05982cac4bac592dade6ce736, type: 3}
+  m_Script: {fileID: 11500000, guid: f303656a43d8a014fb225dd35b6cc3e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Slajder: {fileID: 1888351657}
@@ -575,7 +575,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 387834392}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1b0f0c05982cac4bac592dade6ce736, type: 3}
+  m_Script: {fileID: 11500000, guid: f303656a43d8a014fb225dd35b6cc3e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Slajder: {fileID: 1527764435}
@@ -786,7 +786,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128357481}
+      - m_Target: {fileID: 1128357484}
         m_MethodName: PauzirajIgru
         m_Mode: 1
         m_Arguments:
@@ -930,7 +930,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 10
 --- !u!1 &512059992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,6 +1080,82 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: .5, y: .5}
+--- !u!1 &581151574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 581151579}
+  - 20: {fileID: 581151578}
+  - 124: {fileID: 581151577}
+  - 92: {fileID: 581151576}
+  m_Layer: 0
+  m_Name: UI kamera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!92 &581151576
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581151574}
+  m_Enabled: 1
+--- !u!124 &581151577
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581151574}
+  m_Enabled: 1
+--- !u!20 &581151578
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581151574}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 4
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 32
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+--- !u!4 &581151579
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 581151574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1000, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
 --- !u!1 &598685621
 GameObject:
   m_ObjectHideFlags: 0
@@ -1207,6 +1283,72 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 609883425}
+--- !u!1 &614998604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 614998605}
+  - 222: {fileID: 614998607}
+  - 114: {fileID: 614998606}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &614998605
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614998604}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1208191255}
+  m_RootOrder: 0
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &614998606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614998604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .195999995, g: .195999995, b: .195999995, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Primeni
+--- !u!222 &614998607
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614998604}
 --- !u!1 &623880396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1334,6 +1476,50 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 636353273}
+--- !u!1001 &665327628
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 0afb5c4b95317124aa39fbec93b161a3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0afb5c4b95317124aa39fbec93b161a3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0afb5c4b95317124aa39fbec93b161a3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0afb5c4b95317124aa39fbec93b161a3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0afb5c4b95317124aa39fbec93b161a3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0afb5c4b95317124aa39fbec93b161a3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0afb5c4b95317124aa39fbec93b161a3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 0afb5c4b95317124aa39fbec93b161a3, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0afb5c4b95317124aa39fbec93b161a3, type: 2}
+  m_RootGameObject: {fileID: 1145624949}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
 --- !u!1 &671359396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,7 +1595,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128357481}
+      - m_Target: {fileID: 1128357484}
         m_MethodName: PokreniIgru
         m_Mode: 1
         m_Arguments:
@@ -1606,7 +1792,7 @@ Transform:
   m_GameObject: {fileID: 708989338}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 45}
-  m_LocalScale: {x: 50, y: 1, z: 10}
+  m_LocalScale: {x: 20, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -1863,8 +2049,8 @@ MonoBehaviour:
   obj:
   - {fileID: 100000, guid: 5ce63d2717698fe4e8b0d48ec137eb70, type: 2}
   - {fileID: 100002, guid: 8466f04c87a4e374bbe980cce72771b6, type: 2}
-  minHorizontal: -100
-  maxHorizontal: 100
+  minHorizontal: -150
+  maxHorizontal: 150
   minVertical: 0
   maxVertical: 0
   minSpawnTime: .00999999978
@@ -1956,7 +2142,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 875720657}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1b0f0c05982cac4bac592dade6ce736, type: 3}
+  m_Script: {fileID: 11500000, guid: f303656a43d8a014fb225dd35b6cc3e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Slajder: {fileID: 1306105261}
@@ -2136,7 +2322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1013121053
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2178,7 +2364,7 @@ RectTransform:
   - {fileID: 671359397}
   - {fileID: 223053172}
   m_Father: {fileID: 1876077623}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_AnchorMin: {x: .300000012, y: .100000001}
   m_AnchorMax: {x: .699999988, y: .800000012}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -2196,6 +2382,7 @@ GameObject:
   - 92: {fileID: 1073711606}
   - 124: {fileID: 1073711605}
   - 81: {fileID: 1073711604}
+  - 114: {fileID: 1073711609}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2241,14 +2428,14 @@ Camera:
     width: 1
     height: 1
   near clip plane: .300000012
-  far clip plane: 1000
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 4294967263
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2267,7 +2454,18 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
+--- !u!114 &1073711609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1073711603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd963110f0b4d224da23dbd151a85e4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1128357480
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,6 +2476,7 @@ GameObject:
   - 4: {fileID: 1128357482}
   - 114: {fileID: 1128357481}
   - 114: {fileID: 1128357483}
+  - 114: {fileID: 1128357484}
   m_Layer: 0
   m_Name: MenadzerIgre
   m_TagString: Untagged
@@ -2296,21 +2495,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a91cd6871f55e914b8b86573e7d583f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NajSkorLabela: {fileID: 636353275}
-  SkorLabela: {fileID: 785081969}
-  KrajLabela: {fileID: 1476150893}
-  PauzaDugme: {fileID: 482533272}
-  PauzaMeni: {fileID: 1013121052}
-  PodesavanjaMeni: {fileID: 2054257818}
   skretanje: 0
   Igrac: {fileID: 517552746}
-  PoeniPoMetru: 1
-  PocetnaBrzina: 20
+  SkorLabela: {fileID: 785081969}
+  NajSkorLabela: {fileID: 636353275}
+  Score: 0
   Brzina: 20
-  PovecanjeBrzinePoSekundi: .100000001
-  BrzinaKlizanja: 5
-  VremeKlizanja: .100000001
-  VremeZaKlizanje: .100000001
 --- !u!4 &1128357482
 Transform:
   m_ObjectHideFlags: 0
@@ -2322,7 +2512,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
 --- !u!114 &1128357483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2338,6 +2528,190 @@ MonoBehaviour:
   saturation: 1
   brightness: 1
   hue: 1
+--- !u!114 &1128357484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1128357480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bd30c106c6f7bf43b521abdff887803, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PauzaDugme: {fileID: 482533272}
+  PauzaMeni: {fileID: 1013121052}
+  PodesavanjaMeni: {fileID: 2054257818}
+  SlajderZaBrzinu: {fileID: 2120553856}
+  SlajderZaPromenuBrzine: {fileID: 1888351657}
+  SlajderZaDupliKlik: {fileID: 1527764435}
+  SlajderZaBrzinuKliza: {fileID: 1306105261}
+  SlajderZaVremeKliza: {fileID: 1555801121}
+--- !u!1 &1145624949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 0afb5c4b95317124aa39fbec93b161a3, type: 2}
+  m_PrefabInternal: {fileID: 665327628}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1145624951}
+  - 114: {fileID: 1145624950}
+  m_Layer: 0
+  m_Name: MenadzerPodesavanja
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1145624950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 0afb5c4b95317124aa39fbec93b161a3,
+    type: 2}
+  m_PrefabInternal: {fileID: 665327628}
+  m_GameObject: {fileID: 1145624949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5dcfb0a55dc6a4691e92c550788cf1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TiltKomande: 0
+  TiltVirtualni: 0
+  PoeniPoMetru: 1
+  PocetnaBrzina: 20
+  PovecanjeBrzinePoSekundi: .100000001
+  BrzinaKlizanja: 5
+  VremeKlizanja: .100000001
+  VremeZaKlizanje: .100000001
+  VremeSmrti: 1.5
+--- !u!4 &1145624951
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 0afb5c4b95317124aa39fbec93b161a3, type: 2}
+  m_PrefabInternal: {fileID: 665327628}
+  m_GameObject: {fileID: 1145624949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!1 &1208191254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1208191255}
+  - 222: {fileID: 1208191258}
+  - 114: {fileID: 1208191257}
+  - 114: {fileID: 1208191256}
+  m_Layer: 5
+  m_Name: PodPrimeniDugme
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1208191255
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208191254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 614998605}
+  m_Father: {fileID: 2054257819}
+  m_RootOrder: 16
+  m_AnchorMin: {x: .100000001, y: .0500000007}
+  m_AnchorMax: {x: .449999988, y: .200000003}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1208191256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208191254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: .501960814, g: .501960814, b: .501960814, a: .501960814}
+    m_HighlightedColor: {r: .501960814, g: .501960814, b: .501960814, a: .698039234}
+    m_PressedColor: {r: .345098048, g: .345098048, b: .345098048, a: .698039234}
+    m_DisabledColor: {r: .250980407, g: .250980407, b: .250980407, a: .501960814}
+    m_ColorMultiplier: 2
+    m_FadeDuration: .100000001
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_TargetGraphic: {fileID: 1208191257}
+  m_Interactable: 1
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1128357484}
+        m_MethodName: PrimeniPodesavanja
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_Enabled: 1
+    m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &1208191257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208191254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: .588}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1208191258
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1208191254}
 --- !u!1 &1273877578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2411,7 +2785,7 @@ GameObject:
   - 114: {fileID: 1306105262}
   - 114: {fileID: 1306105261}
   m_Layer: 5
-  m_Name: SliderZaBezinuKlizanja
+  m_Name: SliderZaBrzinuKlizanja
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2482,7 +2856,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128357481}
+      - m_Target: {fileID: 1128357484}
         m_MethodName: SlajderBrzinaKlizanja
         m_Mode: 0
         m_Arguments:
@@ -2598,7 +2972,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128357481}
+      - m_Target: {fileID: 1128357484}
         m_MethodName: Podesavanja
         m_Mode: 1
         m_Arguments:
@@ -2705,72 +3079,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -10}
   m_Pivot: {x: .5, y: .5}
---- !u!1 &1476150891
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 1476150892}
-  - 222: {fileID: 1476150894}
-  - 114: {fileID: 1476150893}
-  m_Layer: 5
-  m_Name: KrajIgreTekst
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1476150892
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1476150891}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1876077623}
-  m_RootOrder: 3
-  m_AnchorMin: {x: 0, y: .200000003}
-  m_AnchorMax: {x: 1, y: .800000012}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: .5, y: .5}
---- !u!114 &1476150893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1476150891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 100
-    m_Alignment: 4
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: 
---- !u!222 &1476150894
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1476150891}
 --- !u!1 &1519460860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2887,7 +3195,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128357481}
+      - m_Target: {fileID: 1128357484}
         m_MethodName: SlajderDupliKlik
         m_Mode: 0
         m_Arguments:
@@ -3011,7 +3319,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128357481}
+      - m_Target: {fileID: 1128357484}
         m_MethodName: SlajderVremeKlizanja
         m_Mode: 0
         m_Arguments:
@@ -3193,7 +3501,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1589767178}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1b0f0c05982cac4bac592dade6ce736, type: 3}
+  m_Script: {fileID: 11500000, guid: f303656a43d8a014fb225dd35b6cc3e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Slajder: {fileID: 1555801121}
@@ -3228,8 +3536,8 @@ RectTransform:
   - {fileID: 598685622}
   m_Father: {fileID: 2054257819}
   m_RootOrder: 15
-  m_AnchorMin: {x: .300000012, y: .0500000007}
-  m_AnchorMax: {x: .699999988, y: .200000003}
+  m_AnchorMin: {x: .550000012, y: .0500000007}
+  m_AnchorMax: {x: .899999976, y: .200000003}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
@@ -3272,7 +3580,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128357481}
+      - m_Target: {fileID: 1128357484}
         m_MethodName: Podesavanja
         m_Mode: 1
         m_Arguments:
@@ -3388,7 +3696,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1624786025}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1b0f0c05982cac4bac592dade6ce736, type: 3}
+  m_Script: {fileID: 11500000, guid: f303656a43d8a014fb225dd35b6cc3e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Slajder: {fileID: 2120553856}
@@ -3544,11 +3852,10 @@ RectTransform:
   - {fileID: 785081968}
   - {fileID: 636353274}
   - {fileID: 482533273}
-  - {fileID: 1476150892}
   - {fileID: 1013121055}
   - {fileID: 2054257819}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 9
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -3580,8 +3887,8 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 2
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_Camera: {fileID: 581151578}
+  m_PlaneDistance: 1
   m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_SortingLayerID: 0
@@ -3669,7 +3976,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128357481}
+      - m_Target: {fileID: 1128357484}
         m_MethodName: SlajderPovecanjeBrzine
         m_Mode: 0
         m_Arguments:
@@ -3924,7 +4231,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2054257819
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3951,8 +4258,9 @@ RectTransform:
   - {fileID: 1555801120}
   - {fileID: 1589767179}
   - {fileID: 1592440554}
+  - {fileID: 1208191255}
   m_Father: {fileID: 1876077623}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_AnchorMin: {x: .349999994, y: .150000006}
   m_AnchorMax: {x: .649999976, y: .75}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -4256,7 +4564,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1128357481}
+      - m_Target: {fileID: 1128357484}
         m_MethodName: SlajderBrzina
         m_Mode: 0
         m_Arguments:
