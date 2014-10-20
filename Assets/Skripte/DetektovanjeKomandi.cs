@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+//ova skripta se ne koristi u igri, napravljena je samo za probu klika/toucha i ray-eva
 public class DetektovanjeKomandi : MonoBehaviour
 {
 	void Update ()

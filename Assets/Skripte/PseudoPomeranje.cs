@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PseudoPomeranje : MonoBehaviour
 {
+    //kao i Pomeranje, ali umesto da pomera objekte pomera offset materijala
 	void Update ()
     {
         renderer.material.mainTextureOffset -= Vector2.up * (MenadzerIgre.menadzerIgre.Brzina/5) * Time.deltaTime;

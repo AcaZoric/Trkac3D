@@ -4,6 +4,8 @@ using System.Collections;
 
 public class UzimanjeVrednostiSlajdera : MonoBehaviour
 {
+    //povezuje slajdere i labele tj. menja tekst u labeli prema vrednosti slajdera
+    //jos uvek u veoma eksperimentalnoj fazi
     public Slider Slajder;
 	private Text vrednost;
 

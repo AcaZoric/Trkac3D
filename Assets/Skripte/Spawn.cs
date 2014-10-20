@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Spawn : MonoBehaviour
 {
+    //stvara objekte iz niza obj u vremenskom intervalu izmedju minSpwanTime i maxSpawnTime sa dimenzijama u intevalima od [minHorizontal,maxHorizontal]x[minVertical,maxVertical]
     public GameObject[] obj;
     public float minHorizontal = -10f;
     public float maxHorizontal = 10f;

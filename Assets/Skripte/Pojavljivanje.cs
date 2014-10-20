@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Pojavljivanje : MonoBehaviour
 {
+    // ova skripta sluzi da se objekti polako pojavljuju u sceni
     public float vreme = 1f;
     public float minKrajnjaVisina = 1f;
     public float maxKrajnjaVisina = 10f;

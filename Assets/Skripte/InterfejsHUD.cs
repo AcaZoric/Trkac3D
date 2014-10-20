@@ -22,6 +22,7 @@ public class InterfejsHUD : MonoBehaviour
 
     void Start()
     {
+        //na pocetku meniji su iskljuceni
         PodesavanjaMeni.SetActive(false);
         PauzaMeni.SetActive(false);
     }
@@ -34,12 +35,13 @@ public class InterfejsHUD : MonoBehaviour
     }
     public void PokreniIgru()
     {
-        MenadzerIgre.menadzerIgre.UcitajPodesavanja();
+        MenadzerIgre.menadzerIgre.UcitajPodesavanja();//ako su podesavanja promenjena opet se ucitavaju, ako nisu opet ce ista da se ucitaju tako da nema problema
         PauzaMeni.SetActive(false);
         PauzaDugme.SetActive(true);
         Time.timeScale = 1;
     }
 
+    //kada se pritisne dugme PODESAVANJA u meniju, poziva se ova funkcija koja sluzi za inicijalizaciju vrednosti interfejsa u meniju za podesavanja
     public void Podesavanja()
     {
         PodesavanjaMeni.SetActive(!PodesavanjaMeni.activeSelf);
@@ -51,6 +53,7 @@ public class InterfejsHUD : MonoBehaviour
         SlajderZaVremeKliza.value = PodesavanjaCuvanje.podesavanja.VremeKlizanja;
     }
 
+    //poziva se kada se pritisne dugme PRIMENI u podesavanjima
     public void PrimeniPodesavanja()
     {
         MenadzerIgre.menadzerIgre.Brzina = brzina;

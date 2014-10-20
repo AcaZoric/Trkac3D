@@ -8,7 +8,7 @@ public class KruziKrozBojeMaterijal : MonoBehaviour
     public float saturation = 1f;
     public float brightness = 1f;
     public float hue = 0f;
-
+    //menjane boja odredjenom brzinom
     void Update()
     {
         hue += BrzinaKruzenja * Time.deltaTime;

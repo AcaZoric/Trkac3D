@@ -6,8 +6,10 @@ using System.IO;
 
 public class PodesavanjaCuvanje : MonoBehaviour
 {
-    public static PodesavanjaCuvanje podesavanja;
+    //ova skripta sluzi da pri ulasku u igru iz fajla ucita podesavanja, po potrebi ih sacuva u fajl. U svakom trenutku u igri mora da postoji tacno objekat sa ovom skriptom
 
+    public static PodesavanjaCuvanje podesavanja;
+    
     public bool TiltKomande = false;
     public bool TiltVirtualni = false;
     public int PoeniPoMetru = 1;
@@ -17,14 +19,14 @@ public class PodesavanjaCuvanje : MonoBehaviour
     public float VremeKlizanja = 0.1f;//trajanje klizanja
     public float VremeZaKlizanje = 0.1f;//vreme za koje vredi dupli klik
     public float VremeSmrti = 1.5f;
-
+  
     void Awake()
     {
         if (!podesavanja)
         {
             DontDestroyOnLoad(gameObject);
             podesavanja = this;
-            //Ucitaj();
+            Ucitaj();
         }
         else if (podesavanja != this)
         {
