@@ -24,7 +24,7 @@ public class PodesavanjaCuvanje : MonoBehaviour
         {
             DontDestroyOnLoad(gameObject);
             podesavanja = this;
-            Ucitaj();
+            //Ucitaj();
         }
         else if (podesavanja != this)
         {
